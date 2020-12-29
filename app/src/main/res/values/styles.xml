@@ -1,0 +1,102 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.normal" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#1c486e</item>
+        <item name="colorPrimaryDark">#1c486e</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    //登录界面
+    <style name="Login_Edit" >
+        <item name="android:layout_marginStart">45dp</item>
+        <item name="android:layout_marginEnd">45dp</item>
+        <item name="android:paddingTop">20px</item>
+        <item name="android:paddingBottom">20px</item>
+        <item name="android:textColor">@color/colorlogined</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColorHint">#666666</item>
+        <item name="android:background">@drawable/button_login_edit</item>
+    </style>
+
+    <style name="button_main_logo">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawable">@drawable/button_round</item>
+    </style>
+    <style name="button_main">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:textColor">@color/colorwhite</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawable">@drawable/button_round</item>
+    </style>
+
+
+    <style name="textbj">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/testbj</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name= "android:layout_marginEnd">10dp</item>
+    </style>
+    <style name="item_showtasklisttitleone">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+    <style name="item_showtasklisttitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+    <style name="item_showtasklisttext">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">#FFEC6E32</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:textColor">@color/colorlogined</item>
+    </style>
+    <!--提示框左边按钮-->
+    <style name="dialog_button_no">
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorblack</item>
+        <item name="android:background">@drawable/button_round_clean</item>
+    </style>
+    <!--提示框右边按钮-->
+    <style name="dialog_button_yes">
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorwhite</item>
+        <item name="android:background">@drawable/buttonselect</item>
+    </style>
+</resources>

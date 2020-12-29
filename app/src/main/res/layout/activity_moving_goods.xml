@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coloritemlistbj"
+    tools:context=".MovingGoodsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Widget.AppCompat.Toolbar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="移库"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        style="@style/textbj"
+        android:layout_marginTop="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imageViewbj"
+        style="@style/textbj"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="148dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/goodshowtext"
+        style="@style/item_showtasklisttitle"
+        android:layout_marginTop="116px"
+        android:text="原库位条码:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/localIDbefore"
+        style="@style/item_showtasklisttext"
+        android:layout_marginStart="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="请扫描原库位条码"
+        app:layout_constraintBottom_toBottomOf="@id/goodshowtext"
+        app:layout_constraintStart_toEndOf="@id/goodshowtext"
+        app:layout_constraintTop_toTopOf="@id/goodshowtext" />
+
+    <TextView
+        android:id="@+id/LocalIDtext"
+        style="@style/item_showtasklisttitle"
+        android:layout_marginTop="83px"
+        android:text="新库位条码:"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goodshowtext" />
+
+    <TextView
+        android:id="@+id/LocalIDnew"
+        style="@style/item_showtasklisttext"
+        android:layout_marginStart="2dp"
+        android:hint="请扫描新库位条码"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/LocalIDtext"
+        app:layout_constraintStart_toEndOf="@id/LocalIDtext"
+        app:layout_constraintTop_toTopOf="@id/LocalIDtext" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LocalIDtext">
+        <Button
+            android:id="@+id/button_clean"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/dialog_button_no"
+            android:text="清空"
+            android:textSize="28sp" />
+        <Button
+            android:id="@+id/button_apply"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/dialog_button_yes"
+            android:text="移库"
+            android:enabled="false"
+            android:textColor="#D3D6D8"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
